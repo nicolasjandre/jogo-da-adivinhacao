@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+    font-size: 62.5%;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    --color-h1: #34355B;
+    --color-h2: rgba(52, 53, 91, 0.8);
+    --color-input-bg: #DCE2E9;
+    --color-button: #7879F1;
+}
+
+.game-wrapper {
+    margin: auto;
+    padding: 6.4rem;
+    width: 90vw;
+    height: 273px;
+    max-width: 428px;
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.game-wrapper h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+    color: var(--color-h1);
+    text-align: center;
+}
+
+.game-wrapper h2 {
+    font-size: 1.6rem;
+    margin-bottom: 4.8rem;
+    color: var(--color-h2);
+    text-align: center;
+}
+
+.input-and-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-and-button-wrapper input {
+    width: 44px;
+    height: 53px;
+    background: var(--color-input-bg);
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    padding: 1.6rem;
+    outline: none;
+    font-size: 1.6rem;
+    font-family: 'DM Sans';
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.input-and-button-wrapper button {
+    border: none;
+    background-color: var(--color-button);
+    padding: 1.6rem;
+    width: 8.4rem;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    font-weight: 700;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+
+.input-and-button-wrapper button:hover {
+    background-color: #6161c0;;
+}
+
+input.active {
+    display: none;
+}
+
+button.active {
+    width: 166px;
+    height: 53px;
+    border-radius: 4px;
+}
+
+@media (max-width: 426px) {
+    .game-wrapper {
+       height: 330px;
+    }
+}
+
+@media (max-width: 402px) {
+    .game-wrapper {
+        padding: 32px;
+    }
+    .game-wrapper h1 {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 324px) {
+    .game-wrapper h1 {
+        margin-top: 0;
+    }
+    .input-and-button-wrapper button, .input-and-button-wrapper input {
+        height: 70px;
+    }
+}
+
+@media (max-width: 315px) {
+    .game-wrapper h1, .game-wrapper h2 {
+        font-size: 1.7rem;
+    }
+}
