@@ -28,7 +28,7 @@ body {
 }
 
 .game-wrapper {
-    margin: auto;
+    margin: -12rem auto 0;
     padding: 6.4rem;
     width: 90vw;
     height: 273px;
