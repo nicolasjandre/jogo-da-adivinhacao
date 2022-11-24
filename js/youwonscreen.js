@@ -27,10 +27,11 @@ export const Game = {
     },
     
     playAgainButton() {
-        h1.innerHTML = 'Jogo da adivinhação'
-        h2.innerHTML = 'Adivinhe o número entre 0 e 9'
-        button.innerHTML = 'Tentar'
-        button.classList.remove('active')
-        input.classList.remove('active')
+        setInterval
+            h1.innerHTML = 'Jogo da adivinhação'
+            h2.innerHTML = 'Adivinhe o número entre 0 e 9'
+            button.innerHTML = 'Tentar'
+            button.classList.remove('active')
+            input.classList.remove('active')
     }
 }

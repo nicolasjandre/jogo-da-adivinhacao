@@ -38,6 +38,12 @@ body {
     border-radius: 6px;
 }
 
+.game-wrapper p {
+    text-align: center;
+     margin-top: 7px;
+     color: red;
+}
+
 .game-wrapper h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
